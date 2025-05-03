@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// ✅ Use deployed backend URL
+// Use your deployed backend URL
 const API = axios.create({ baseURL: 'https://memories-2-cnhx.onrender.com' });
 
 export const fetchPosts = () => API.get('/posts');
