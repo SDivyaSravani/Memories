@@ -1,4 +1,5 @@
 {
+  "homepage": "https://SDivyaSravani.github.io/Memories",
   "name": "mern-stack-client",
   "version": "0.1.0",
   "private": true,
@@ -20,11 +21,11 @@
     "redux-thunk": "^2.3.0",
     "webpack": "^5.99.7"
   },
-  "scripts": {
+    "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +48,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0"
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "gh-pages": "^6.3.0"
   }
 }
