@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.5b0db452.css","mappings":"AAAA,KACI,kFAAiD,CAGjD,uBAA2B,CAD3B,2BAA4B,CAD5B,qBAGJ","sources":["index.css"],"sourcesContent":["body {\n    background-image: url('../src/images/travel.jpg');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n"],"names":[],"sourceRoot":""}
