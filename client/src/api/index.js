@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-// Use your deployed backend URL
-const API = axios.create({ baseURL: 'https://memories-2-cnhx.onrender.com' });
+// 🔄 Switch to your deployed backend URL
+const url = 'https://memories-2-cnhx.onrender.com/posts';
 
-export const fetchPosts = () => API.get('/posts');
-export const createPost = (newPost) => API.post('/posts', newPost);
-export const likePost = (id) => API.patch(`/posts/${id}/likePost`);
-export const updatePost = (id, updatedPost) => API.patch(`/posts/${id}`, updatedPost);
-export const deletePost = (id) => API.delete(`/posts/${id}`);
+export const fetchPosts = () => axios.get(url);
+export const createPost = (newPost) => axios.post(url, newPost);
+export const likePost = (id) => axios.patch(`${url}/${id}/likePost`);
+export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
+export const deletePost = (id) => axios.delete(`${url}/${id}`);
